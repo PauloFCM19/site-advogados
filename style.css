@@ -31,7 +31,6 @@ i{
 
 #header{
   min-height: 85vh;
-  width: 1920px;
   background-image: url(./img/main_banner4.png);
   background-size: cover;
   background-position: center;
@@ -183,6 +182,8 @@ i{
   flex: 1 1 300px;
   position: relative;
 }
+
+
 
 .image-container i {
   position: absolute;
@@ -456,6 +457,7 @@ i{
 
 #footer a {
   color: var(--primary-text-color);
+  transition: .4s;
 }
 
 #footer a:hover{
@@ -499,10 +501,12 @@ i{
 
 #footer .networks i {
   padding: 1rem;
+  transition: .4s;
 }
 
 #footer .networks i:hover{
-  filter: brightness(120%);
+  background-color: var(--primary-text-color);
+  color: var(--main-color);
 }
 
 .links-container h4 {
@@ -565,70 +569,24 @@ i{
   left: 0;
 }
 
+
 #mobile-navbar a {
   color: var(--primary-text-color);
   font-size: 2rem;
+  line-height: 4rem;
   text-align: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
   border-bottom: 1px solid var(--main-color);
+  transition: .4s;
 }
 
-@media (max-width: 501px) {
- #header{
-  width: 500px;
-  
- }
-
- #inner-header{
-  flex-direction: column;
-  margin-right: 0;
+#mobile-navbar a:hover{
+  background-color: var(--secondary-bg-color);
 }
-  #brand{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  #nav-bar ul{
-   display: flex;
-   width: 500px;
-   margin: 0;
-   gap: 0;
-   justify-content: center;
-   
-   
-  }
-
-  .banner{
-    max-width: 100%;
-  }
-  .banner h2{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    z-index: 2;
-    position: relative;
-  }
-  
-  .banner p{
-    font-size: 1.5rem;
-    
-    
-  }
-  #nav-bar a{
-    padding: 1rem 3rem;
-    
-  }
-  .hide{
-    display: none;
-
-  }
 
 
-}
 
 /* Responsivo */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   /* Geral */
   body {
     overflow-x: hidden;
@@ -640,7 +598,7 @@ i{
   }
 
   /* navbar */
-  #navbar {
+  #nav-bar {
     display: none;
   }
 
