@@ -234,7 +234,7 @@ i{
 
 /* about */
 #about-text {
-  background-image: url("./img/pattern.png") red;
+  background: url("./img/pattern.png") var(--main-color);
   background-size: cover;
   background-position: center;
   color: var(--primary-text-color);
