@@ -232,6 +232,7 @@ i{
   gap: 2rem;
 }
 
+/* about */
 #about-text {
   background-image: url("./img/pattern.png");
   background-size: cover;
