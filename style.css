@@ -591,6 +591,11 @@ i{
   body {
     overflow-x: hidden;
   }
+  .square{
+    width: 100px;
+    height: 100px;
+    top: 40px;
+  }
 
   i {
     padding: 1.5rem;
